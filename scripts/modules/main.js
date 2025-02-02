@@ -12,6 +12,7 @@ import { FinishLine } from "../gameObjects/finishLine.js";
 import { Ammunition } from "../gameObjects/ammunition.js";
 import { Column } from "../gameObjects/columns.js";
 import { Lava } from "../gameObjects/lava.js";
+import SoundManager from "./sound.js";
 
 function gameLoop(totalRunningTime) { 
     global.deltaTime = totalRunningTime - global.prevTotalRunningTime; // Time in milliseconds between frames
@@ -37,6 +38,7 @@ function gameLoop(totalRunningTime) {
         global.playerObject.active = false;
         document.getElementById("canvas").style.opacity = 0.5;
         global.score = 0;
+        global.soundtrack.pause();
     }
     global.drawPoints();
     global.drawLifes();
@@ -168,12 +170,50 @@ function setupGame() {
 
     // new Floor(0,900,10000,100);
     new Floor(0, 900, 1500, 100);
-     new Floor(2500,900,1200,100);
+    new Floor(2500,900,1200,100);
     new Lava(1500,910,1000,100);
     new Lava(-1000,910,1000,100);
     new Lava(3700,910,5000,100)
 
-   console.log(global.allGameObjects);
+    console.log(global.allGameObjects);
+    global.soundManager = new SoundManager; 
+
+
+    global.soundtrack = global.soundManager.load("soundtrack","./sounds/soundtrack.mp3")
+    global.soundtrack.loop = true;
+    global.soundtrack.volume = 0.1; 
+
+    global.shootSound = global.soundManager.load("shoot","./sounds/shoot1.mp3");
+    global.shootSound.singleton =  true;
+    global.shootSound.volume = 0.5; 
+
+    global.enemyDamage = global.soundManager.load("enemyDamage","./sounds/enemy_damage.wav")
+    global.enemyDamage.singleton = true;
+//    global.enemyDamage.volume = 0.5;
+
+    global.emptyGun = global.soundManager.load("emptyGun","./sounds/empty_gun.mp3");
+    global.emptyGun.singleton = true;
+
+    global.coinSound = global.soundManager.load("coinSound","./sounds/coin.mp3")
+    global.coinSound.singleton = true;
+
+    global.lavaSound = global.soundManager.load("lavaSound","./sounds/lava.mp3")
+    global.lavaSound.singleton = true;
+
+    global.reload = global.soundManager.load("reload","./sounds/reload.mp3");
+    global.reload.singleton = true;
+
+    global.deathSound = global.soundManager.load("deathSound","./sounds/death.mp3");
+    global.deathSound.singleton = true;
+
+    global.damageSound = global.soundManager.load("damageSound","./sounds/damage.mp3")
+    global.damageSound.singleton = true;
+
+    global.winSound = global.soundManager.load("winSound","./sounds/win.wav");
+    global.winSound.singleton = true;
+
+    global.buffSound = global.soundManager.load('buffSound',"./sounds/buff.mp3")
+    global.buffSound.singleton = true;
 }
 
 function startGame()
@@ -183,12 +223,15 @@ function startGame()
     document.getElementById("canvas").style.opacity = 1;
     document.getElementById("lostScreen").style.display= "none";
     document.getElementById("wonScreen").style.display= "none";
+
     global.ctx.clearRect(0, 0, global.canvas.width, global.canvas.height);
     global.currentWeapon = 0;
     global.allGameObjects = [];
     global.allEnemies = [];
     global.allHpBars = [];
+
     setupGame();
+    global.soundManager.play("soundtrack");
 }
 document.getElementById('startButton').addEventListener('click', (e) => {
     startGame();

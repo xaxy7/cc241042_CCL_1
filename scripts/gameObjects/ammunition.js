@@ -11,6 +11,9 @@ class Ammunition extends BaseGameObject{
         {
             this.active = false;
             collidingObject.ammoCount  =12;
+            global.reload.pause();
+            global.soundManager.play("reload");
+
         }
     }
     constructor(x,y,width,height)

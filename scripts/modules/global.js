@@ -27,6 +27,18 @@ global.weaponFire = false;
 global.score = 0;
 global.counter = 0;
 
+global.soundManager;
+global.soundtrack;
+global.shootSound;
+global.enemyDamage;
+global.emptyGun;
+global.coinSound;
+global.lavaSound;
+global.reload;
+global.deathSound;
+global.damageSound;
+global.winSound;
+global.buffSound;
 
 global.getCanvasBounds = function () {
     let bounds =  {
@@ -76,6 +88,9 @@ global.checkCollisionWithAnyOther = function (givenObject) {
 }
 global.gameWon = function()
 {
+    global.soundtrack.pause();
+    global.winSound.pause();
+    global.soundManager.play("winSound");
     document.getElementById("wonScreen").style.display= "block";
     // document.getElementById("canvas").style.display = "none";
     document.getElementById("canvas").style.opacity = 0.5;
@@ -112,6 +127,7 @@ global.gameWon = function()
     global.playerObject.ammoCount =12;
     global.score = 0;
     global.counter = 0;
+
 }
 global.restartGame = function(){
     global.allGameObjects.forEach(gameObject => {

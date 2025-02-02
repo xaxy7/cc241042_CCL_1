@@ -15,6 +15,8 @@ class Weapon extends BaseGameObject
             // if(weaponType === 1)
             this.active = false;
             global.currentWeapon = this.weaponType;
+            global.buffSound.pause();
+            global.soundManager.play("buffSound");
 
         }
 

@@ -29,6 +29,10 @@ class Enemy extends BaseGameObject{
         {
             // global.playerObject.active = false;
             collidingObject.lifes -= 1;
+            global.damageSound.pause();
+            global.soundManager.play("damageSound");
+            if(collidingObject.lifes === 0)
+                global.soundManager.play("deathSound");
             global.restartGame()
         }
     }

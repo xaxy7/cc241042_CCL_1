@@ -10,6 +10,8 @@ class Coin extends BaseGameObject
             this.active = false;
             global.score++;
             console.log(global.score)
+            global.coinSound.pause();
+            global.soundManager.play("coinSound");
         }
     }
     constructor(x,y,width,height)

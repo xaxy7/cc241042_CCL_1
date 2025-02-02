@@ -48,7 +48,8 @@ class Projectile extends BaseGameObject
 
                 }
             });
-        
+            global.enemyDamage.pause();
+            global.soundManager.play("enemyDamage");
             console.log("hitcheck")
             // collidingObject.active = false;
             this.active = false;

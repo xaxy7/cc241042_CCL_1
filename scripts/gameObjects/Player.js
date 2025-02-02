@@ -80,9 +80,18 @@ class Player extends BaseGameObject {
 
                 this.counter = 0;
                 this.ammoCount--;
+                global.shootSound.pause();
+                global.soundManager.play("shoot");
+            }
+            else if(this.ammoCount === 0)
+            {
+                global.emptyGun.pause();
+                global.soundManager.play("emptyGun");
             }
 
+
         }
+
         // console.log(this.ammoCount)
         this.counter++;
         global.weaponFire = false;

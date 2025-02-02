@@ -16,6 +16,11 @@ class Lava extends BaseGameObject{
         {
             // global.playerObject.active = false;
             collidingObject.lifes -= 1;
+            global.lavaSound.pause();
+            global.soundManager.play('lavaSound')
+            if(collidingObject.lifes === 0)
+                global.soundManager.play("deathSound");
+
             global.restartGame()
         }
     }
