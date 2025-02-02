@@ -13,7 +13,7 @@
 
 ### Main Gameplay:
 <div style="text-align: center;">
-  <img src="gameplay.png" alt="Gameplay Screenshot" width="1000">
+  <img src="images_for_readme/gameplay.png" alt="Gameplay Screenshot" width="1000">
   <p>*Begining of the game*</p>
 </div>
 
@@ -21,15 +21,15 @@
 
 ### Menu and UI:
 <div style="text-align: center;">
-  <img src="mainmenu.png" alt="Start Screen" width="1000">
+  <img src="images_for_readme/mainmenu.png" alt="Start Screen" width="1000">
   <p>*Start Screen*</p>
 </div>
 <div style="text-align: center;">
-  <img src="deathscreen.png" alt="Death screen" width="1000">
+  <img src="images_for_readme/deathscreen.png" alt="Death screen" width="1000">
   <p>*Death Screen*</p>
 </div>
 <div style="text-align: center;">
-  <img src="winscreen.png" alt="Win screen" width="1000">
+  <img src="images_for_readme/winscreen.png" alt="Win screen" width="1000">
   <p>*Win Screen*</p>
 </div>
 
@@ -40,7 +40,7 @@ Below are the sprites used to create characters and objects in the game:
 
 ### Player Character:
 <div style="text-align: center;">
-  <img src="pigeon_animation_2.png" alt="Player Spritesheet" width="800">
+  <img src="images_for_readme/pigeon_animation_2.png" alt="Player Spritesheet" width="800">
   <p>*Player character animations.*</p>
 </div>
 
@@ -48,11 +48,11 @@ Below are the sprites used to create characters and objects in the game:
 
 ### Enemies and NPCs:
 <div style="text-align: center;">
-  <img src="ship.png" alt="Enemy Spritesheet" width="200">
+  <img src="images_for_readme/ship.png" alt="Enemy Spritesheet" width="200">
   <p>*Enemy - flying*</p>
 </div>
 <div style="text-align: center;">
-  <img src="worm_v2.png" alt="Enemy Spritesheet" width="800">
+  <img src="images_for_readme/worm_v2.png" alt="Enemy Spritesheet" width="800">
   <p>*Enemy - walking*</p>
 </div>
 
@@ -60,15 +60,15 @@ Below are the sprites used to create characters and objects in the game:
 
 ### Collectables:
 <div style="text-align: center;">
-  <img src="seed_with_outline.png" alt="Seed" width="200">
+  <img src="images_for_readme/seed_with_outline.png" alt="Seed" width="200">
   <p>*Seed*</p>
 </div>
 <div style="text-align: center;">
-  <img src="ammobox.png" alt="Ammobox" width="200">
+  <img src="images_for_readme/ammobox.png" alt="Ammobox" width="200">
   <p>*Ammobox*</p>
 </div>
 <div style="text-align: center;">
-  <img src="power_up_with_outline.png" alt="powerup" width="200">
+  <img src="images_for_readme/power_up_with_outline.png" alt="powerup" width="200">
   <p>*Power Up*</p>
 </div>
 
@@ -76,9 +76,9 @@ Below are the sprites used to create characters and objects in the game:
 
 ### Platforms:
 <div style="text-align: center;">
-  <img src="blockobject1.png" alt="platform 1" width="200">
+  <img src="images_for_readme/blockobject1.png" alt="platform 1" width="200">
   <p>*Platform 1*</p>
-  <img src="platform_with_columns_2.png" alt="platform 2" width="200">
+  <img src="images_for_readme/platform_with_columns_2.png" alt="platform 2" width="200">
   <p>*Platform 2*</p>
 </div>
 
