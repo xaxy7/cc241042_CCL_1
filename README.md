@@ -47,7 +47,7 @@ Below are the sprites used to create characters and objects in the game:
 
 ### Enemies and NPCs:
 <div style="text-align: center;">
-  <img src="ship.png" alt="Enemy Spritesheet" width="300">
+  <img src="ship.png" alt="Enemy Spritesheet" width="200">
   <p>*Enemy - flying*</p>
 </div>
 <div style="text-align: center;">
@@ -57,12 +57,23 @@ Below are the sprites used to create characters and objects in the game:
 ---
 ### Collectables:
 <div style="text-align: center;">
-  <img src="worm_v2.png" alt="Enemy Spritesheet" width="800">
+  <img src="seed_with_outline.png" alt="Seed" width="200">
   <p>*Seed*</p>
 </div>
-
-
-
+<div style="text-align: center;">
+  <img src="ammobox.png" alt="Ammobox" width="200">
+  <p>*Ammobox*</p>
+</div>
+<div style="text-align: center;">
+  <img src="power_up_with_outline.png" alt="powerup" width="200">
+  <p>*Power Up*</p>
+</div>
+### Platforms:
+<div style="text-align: center;">
+  <img src="power_up_with_outline.png" alt="powerup" width="200">
+  <img src="power_up_with_outline.png" alt="powerup" width="200">
+  <p>*Power Up*</p>
+</div>
 
 
 ## ✍️ **Reflection**
