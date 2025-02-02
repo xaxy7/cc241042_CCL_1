@@ -25,12 +25,12 @@
   <p>*Start Screen*</p>
 </div>
 <div style="text-align: center;">
-  <img src="deathsreen.png" alt="Death screen" width="1000">
-  <p>*Start Screen*</p>
+  <img src="deathscreen.png" alt="Death screen" width="1000">
+  <p>*Death Screen*</p>
 </div>
 <div style="text-align: center;">
   <img src="winscreen.png" alt="Win screen" width="1000">
-  <p>*Start Screen*</p>
+  <p>*Win Screen*</p>
 </div>
 ---
 
