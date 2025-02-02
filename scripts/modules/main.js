@@ -179,40 +179,40 @@ function setupGame() {
     global.soundManager = new SoundManager; 
 
 
-    global.soundtrack = global.soundManager.load("soundtrack","./sounds/soundtrack.mp3")
+    global.soundtrack = global.soundManager.load("soundtrack","../sounds/soundtrack.mp3")
     global.soundtrack.loop = true;
     global.soundtrack.volume = 0.1; 
 
-    global.shootSound = global.soundManager.load("shoot","./sounds/shoot1.mp3");
+    global.shootSound = global.soundManager.load("shoot","../sounds/shoot1.mp3");
     global.shootSound.singleton =  true;
     global.shootSound.volume = 0.5; 
 
-    global.enemyDamage = global.soundManager.load("enemyDamage","./sounds/enemy_damage.wav")
+    global.enemyDamage = global.soundManager.load("enemyDamage","../sounds/enemy_damage.wav")
     global.enemyDamage.singleton = true;
 //    global.enemyDamage.volume = 0.5;
 
-    global.emptyGun = global.soundManager.load("emptyGun","./sounds/empty_gun.mp3");
+    global.emptyGun = global.soundManager.load("emptyGun","../sounds/empty_gun.mp3");
     global.emptyGun.singleton = true;
 
-    global.coinSound = global.soundManager.load("coinSound","./sounds/coin.mp3")
+    global.coinSound = global.soundManager.load("coinSound","../sounds/coin.mp3")
     global.coinSound.singleton = true;
 
-    global.lavaSound = global.soundManager.load("lavaSound","./sounds/lava.mp3")
+    global.lavaSound = global.soundManager.load("lavaSound","../sounds/lava.mp3")
     global.lavaSound.singleton = true;
 
-    global.reload = global.soundManager.load("reload","./sounds/reload.mp3");
+    global.reload = global.soundManager.load("reload","../sounds/reload.mp3");
     global.reload.singleton = true;
 
-    global.deathSound = global.soundManager.load("deathSound","./sounds/death.mp3");
+    global.deathSound = global.soundManager.load("deathSound","../sounds/death.mp3");
     global.deathSound.singleton = true;
 
-    global.damageSound = global.soundManager.load("damageSound","./sounds/damage.mp3")
+    global.damageSound = global.soundManager.load("damageSound","../sounds/damage.mp3")
     global.damageSound.singleton = true;
 
-    global.winSound = global.soundManager.load("winSound","./sounds/win.wav");
+    global.winSound = global.soundManager.load("winSound","../sounds/win.wav");
     global.winSound.singleton = true;
 
-    global.buffSound = global.soundManager.load('buffSound',"./sounds/buff.mp3")
+    global.buffSound = global.soundManager.load('buffSound',"../sounds/buff.mp3")
     global.buffSound.singleton = true;
 }
 
