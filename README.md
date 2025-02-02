@@ -21,10 +21,17 @@
 
 ### Menu and UI:
 <div style="text-align: center;">
-  <img src="menu.png" alt="Menu UI Screenshot" width="600">
-  <p>*Figure 2: Menu and user interface.*</p>
+  <img src="mainmenu.png" alt="Start Screen" width="1000">
+  <p>*Start Screen*</p>
 </div>
-
+<div style="text-align: center;">
+  <img src="deathsreen.png" alt="Death screen" width="1000">
+  <p>*Start Screen*</p>
+</div>
+<div style="text-align: center;">
+  <img src="winscreen.png" alt="Win screen" width="1000">
+  <p>*Start Screen*</p>
+</div>
 ---
 
 ## 🎨 **Spritesheets**
@@ -32,7 +39,7 @@ Below are the sprites used to create characters and objects in the game:
 
 ### Player Character:
 <div style="text-align: center;">
-  <img src="playersheet.png" alt="Player Spritesheet" width="500">
+  <img src="playersheet.png" alt="Player Spritesheet" width="1000">
   <p>*Figure 3: Player character animations.*</p>
 </div>
 
