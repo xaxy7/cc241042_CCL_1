@@ -118,8 +118,8 @@ I added:
 
 22.01.2025
 start work 14:00
-ended work
-total work
+ended work 16:30
+total work 2h
 
 I added:
 -animation for the player
@@ -132,3 +132,5 @@ to do:
 -ui improvemens
 -win, lose, title screen improvemens
 - sounds
+
+23.01.2025
